@@ -18,6 +18,7 @@ co.no_imgs(True)  # 禁用图片加载
 co.no_js(True)  # 禁用JavaScript
 co.set_timeouts(30)
 # 创建页面对象时应用配置
+page = ChromiumPage(addr_or_opts=co)
 page.set.load_mode.none()
 
 # 监听特定的网络流
